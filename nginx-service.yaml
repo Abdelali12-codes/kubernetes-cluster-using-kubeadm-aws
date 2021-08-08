@@ -10,6 +10,13 @@ spec:
     targetPort: 80
     nodePort: 30400
     protocol: TCP
+  - port: 3000
+    targetPort: 3000
+    nodePort: 30600
+    protocol: TCP 
   selector:
     run: my-nginx
   type: NodePort
+
+  # you can send http request in either of ports
+  

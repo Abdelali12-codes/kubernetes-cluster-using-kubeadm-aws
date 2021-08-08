@@ -4,14 +4,14 @@
 
 ## 2. run the following command on the both instances you created above
 
-1. sudo apt-get update
-2. sudo apt-get install -y apt-transport-https ca-certificates curl
-3. sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-4. echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-5. sudo apt-get update
-6. sudo apt-get install -y kubelet kubeadm kubectl
-7. sudo apt-mark hold kubelet kubeadm kubectl
-8. sudo apt install docker.io
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl
+sudo apt-mark hold kubelet kubeadm kubectl
+sudo apt install docker.io
 
 ## 3. initialization of the master node run the command below (run this command only on the master node)
 
